@@ -1,0 +1,235 @@
+/* User's profile */
+
+.content-profile {
+  display: flex;
+  width: 100vw;
+  background-color: #dde2dc;
+}
+
+#plantFavorites {
+  padding-left: 10px;
+}
+
+.user-profile-title {
+  font-size: 60px;
+  color: #1b423a;
+  text-align: center;
+  width: 100%;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+#plantFavorites h2 {
+  font-size: 50px;
+  color: #7db094;
+  text-align: center;
+  width: 100%;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+#asideprofile {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+  min-height: 100vh;
+  background-color: #33493d;
+  color: white;
+  box-shadow: 5px 0px 6px -4px rgba(125, 176, 164, 0.6);
+}
+
+#edit-profile {
+  width: 100%;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.input-name {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+#img-title {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header2 {
+  text-align: start;
+  color: #f1f0eb;
+  padding-top: 10px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin: 20px 0;
+}
+
+.type-in {
+  height: 30px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #33493d;
+  border: 1px solid white;
+  color: white;
+  font-size: 10px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  width: 60%;
+}
+
+#file {
+  background-color: #33493d;
+  border: 1px solid white;
+}
+
+.fas.fa-pencil-alt {
+  color: white;
+  font-size: 15px;
+}
+
+.edit-btn {
+  background-color: #33493d;
+  padding: 5px;
+  margin-left: 20px;
+  border: none;
+}
+
+.edit-btn span {
+  display: none;
+}
+
+.edit-item {
+  padding-bottom: 20px;
+}
+
+.user-likes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.user-avatar {
+  width: 100%;
+}
+
+.avatarContainer {
+  border-radius: 50%;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.delete {
+  border-radius: 10px;
+  border: 1px solid #b44a22;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #b44a22;
+  background: none;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.delete:hover {
+  color: white;
+  background: #b44a22;
+}
+
+#delete {
+  margin-top: 30px;
+}
+
+/*Masonery grid*/
+
+#gridProfile {
+  width: 100%;
+  clear: both;
+}
+
+.favgrid-sizer {
+  width: 33%;
+}
+.favgrid-item {
+  width: 33%;
+  float: left;
+}
+.favgutter-sizer {
+  width: 4px;
+}
+
+.favplant-mini {
+  position: relative;
+}
+
+.favplant-mini-img {
+  height: 100%;
+}
+
+.favplant-mini-img img {
+  width: 100%;
+}
+
+/*hover div*/
+
+.favplantsInfo {
+  position: absolute;
+  text-decoration: none;
+  color: rgba(35, 48, 28, 0);
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.favplantsInfo:hover {
+  color: rgba(35, 48, 28, 1);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color linear 0.5s;
+}
+
+.favplantsInfo span {
+  font-size: 30px;
+}
+
+.fav {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  z-index: 10;
+  color: white;
+}
+
+.fas.fa-heart.white {
+  color: white;
+}
+
+.fav.fas.fa-heart.white.is-active {
+  color: red;
+}
+
+/*One plant*/
+
+.onePlantImg {
+  width: 25%;
+}
+
+.onePlantImg img {
+  width: 100%;
+}
+
+.fas.fa-search {
+  color: #1b423a;
+  margin-left: 10px;
+}

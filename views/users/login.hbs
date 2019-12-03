@@ -1,0 +1,21 @@
+<div id="content_login">
+  <div id="login">
+
+
+    <h2 class="welcome">WELCOME BACK</h2>
+    {{#if msg}}
+    <p class="errormessage">{{msg}}</p>
+    {{/if}}
+    <div id="form">
+      <form class="form" action="/login" method="post">
+        {{!-- <label class="email" for="email">Email</label> --}}
+        <input class="input" id="email" type="email" name="email" required placeholder="email">
+        {{!-- <label class="password" for="password">Password</label> --}}
+        <input class="input" id="password" type="password" name="password" required placeholder="password">
+        <button class="button">Login</button>
+      </form>
+
+      <p>Don't have an account yet ? <a href="/signup">Sign Up</a></p>
+    </div>
+  </div>
+</div>

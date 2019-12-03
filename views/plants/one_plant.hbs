@@ -1,0 +1,40 @@
+<div class="content-one-plant">
+
+  <div id="first-column">
+    <h1 class="title-plant">{{ plant.name }}</h1>
+
+    <div class="plant-avatar">
+      <img class="plant-avatar" src="{{plant.avatar}}" alt="{{plant.name}}">
+    </div>
+
+  </div>
+
+  <div id="second-column">
+    <div id="decoration">
+      <div class="plant-box">
+        <div class="paragraph">
+          <p class="subtitles"><span class="capital-letter">{{ plant.environment.outside }}</span>
+            {{ plant.environment.type_of_plant }}</p>
+          <p>{{ plant.descriptif }}</p>
+        </div>
+        <div class="paragraph">
+          <p class="subtitles">
+            How do I take good care of it?<br>
+          </p>
+          <p>{{ plant.advice }}</p>
+        </div>
+        <div class="paragraph">
+          <p class="subtitles">Best environment to grow in:</p>
+          <ul>
+            <li class="list">Lighting: {{ plant.environment.lighting }}</li>
+            <li class="list">Humidity: {{ plant.environment.humidity }}</li>
+            <li class="list">Is it pet friendly? {{ plant.environment.animals }}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>

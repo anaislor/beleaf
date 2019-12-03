@@ -1,0 +1,45 @@
+@import url("/stylesheets/partials.css");
+@import url("/stylesheets/home.css");
+@import url("/stylesheets/plants.css");
+@import url("/stylesheets/signup.css");
+@import url("/stylesheets/login.css");
+@import url("/stylesheets/map.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400&display=swap");
+@import url("/stylesheets/user_profile.css");
+@import url("/stylesheets/one_plant.css");
+@import url("/stylesheets/responsive.css");
+@import url("/stylesheets/profile_responsive.css");
+@import url("/stylesheets/one_plant_responsive.css");
+@import url("/stylesheets/login_responsive.css");
+@import url("/stylesheets/signup_responsive.css");
+@import url("/stylesheets/plants-responsive.css");
+@import url("/stylesheets/nav_responsive.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*color palette
+grey : #6b6c6b
+dark green: #1b423a
+blue green: #7db094
+light green: #7db0a4
+extra light green: #cdd9d7
+*/
+
+/*color palette
+white: #dde2dc
+grey : #6b6c6b
+dark green: #33493d
+blue green: #7db094
+light green: #7db0a4
+extra light green: #c2d1cc
+*/

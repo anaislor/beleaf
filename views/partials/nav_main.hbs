@@ -1,0 +1,43 @@
+<nav class="nav-container">
+  <div id="main-links">
+    <div class="nav-ul-container">
+      <ul id="main-nav">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/plants">PLANTS</a></li>
+        {{#if isLoggedIn }}
+
+        <li><a href="/map">SHOPS</a></li>
+        {{/if}}
+      </ul>
+      <ul id="user-nav">
+        {{#if isLoggedIn }}
+        <li><a href="/profile">PROFILE</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
+        {{/if}}
+        {{#unless isLoggedIn}}
+        <li><a href="/login">LOGIN</a></li>
+        {{/unless}}
+      </ul>
+    </div>
+  </div>
+
+  <span id="mobile-icon">
+    <i class="fas fa-bars"></i>
+    <div id="nav_mobile">
+      <ul id="plant-nav">
+        <li><a href="/plants">Find a plant</a></li>
+        {{#if isLoggedIn }}
+        <li><a href="/map">Find a shop</a></li>
+        {{/if}}
+        {{#if isLoggedIn }}
+        <li><a href="/profile">Profile</a></li>
+        <li><a href="/logout">Logout</a></li>
+        {{/if}}
+        {{#unless isLoggedIn}}
+        <li><a href="/login">Login</a></li>
+        {{/unless}}
+      </ul>
+    </div>
+  </span>
+
+</nav>

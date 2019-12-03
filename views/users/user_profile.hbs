@@ -1,0 +1,73 @@
+<div class="content-profile">
+
+  <aside id="asideprofile">
+    <div id="edit-profile">
+
+      <div id="img-title">
+        <div class="avatarContainer">
+          <img src="{{ user.avatar }}" class="user-avatar">
+        </div>
+      </div>
+      <h2 id="header2">EDIT PROFIL</h2>
+
+      {{#if msg}}
+      <span>{{msg}}</span>
+      {{/if}}
+
+      <form class="edit-item" action="/profile/edit/{{user._id}}/name" method="POST">
+        <label class="input-name" for="name">Username </label><br>
+        <input class="type-in" type="text" name="name" value="{{user.name}}">
+        <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+      </form>
+      <form class="edit-item" action="/profile/edit/{{user._id}}/email" method="POST" </form> <label class="input-name"
+        for="email">Email
+        </label><br>
+        <input class="type-in" type="text" name="email" value="{{user.email}}">
+        <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+      </form>
+      <form class="edit-item" action="/profile/edit/{{user._id}}/password" method="POST">
+        <label class="input-name" for="password">Password </label><br>
+        <input class="type-in" type="password" name="password" value="{{user.password}}">
+        <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+      </form>
+      <form class="edit-item" action="/profile/edit/{{user._id}}/avatar" method="POST" enctype="multipart/form-data">
+        <label class="input-name" for="avatar">Avatar </label><br>
+        <input id="file" class="type-in" type="file" name="avatar" value="{{user.avatar}}">
+        <button class="edit-btn"><i class="fas fa-pencil-alt"></i></button>
+      </form>
+      <form id="delete" class="edit-item" action="/profile/{{user._id}}/delete" method="post">
+        {{!-- <label class="input-name" for="">Delete your account?</label><br> --}}
+        <button class="delete">Delete my account</button>
+      </form>
+
+    </div>
+  </aside>
+
+  <div class="user-likes">
+
+
+    <div id="plantFavorites">
+      <h1 class="user-profile-title">HELLO {{ user.name }}</h1>
+      <div id="gridProfile">
+        <div class="favgrid-sizer"></div>
+        <div class="favgutter-sizer"></div>
+
+        {{#each user.favorite_plants}}
+        <div class="favplant-mini favgrid-item">
+          <i class="fav fas fa-heart white" data-id="{{this._id}}"></i>
+          <a class="favplantsInfo" href="/plants/{{this._id}}">
+            <div>
+              <span>{{this.name}}</span>
+            </div>
+          </a>
+          <div class="favplant-mini-img">
+            <img src="{{this.avatar}}" alt="plant-img">
+          </div>
+        </div>
+        {{/each}}
+
+      </div>
+    </div>
+
+  </div>
+</div>

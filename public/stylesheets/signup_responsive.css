@@ -1,0 +1,61 @@
+/*HOME*/
+
+/* phones */
+/* from 413px */
+@media screen and (max-width: 767px) {
+  #signup {
+    width: 80%;
+  }
+
+  #signup .title_signup {
+    font-size: 20px;
+  }
+
+  #signup .input_signup {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  #signup .button_signup {
+    margin-top: 20px;
+    width: 70%;
+    font-size: 12px;
+  }
+
+  #signup #form p {
+    font-size: 10px;
+  }
+}
+
+/* big phones / tablet */
+/* from 415px to 1023px */
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  #signup {
+    width: 80%;
+  }
+
+  #signup .title_signup {
+    font-size: 50px;
+  }
+
+  #signup .input_signup {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  /* #signup .button_signup {
+    margin-top: 20px;
+    width: 40%;
+    font-size: 12px;
+  } */
+
+  #signup #form p {
+    font-size: 15px;
+  }
+}
+
+/* small to medium desktop */
+/* from 1024ox to 1440px
+/* @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  
+} */

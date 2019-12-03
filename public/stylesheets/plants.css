@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+/* All plants*/
+#plantsContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #dde2dc;
+}
+
+#plantsContainer li {
+  list-style-type: none;
+}
+
+/*plants filter*/
+#asideplants {
+  width: 30%;
+  min-height: 100vh;
+  padding-left: 10px;
+  padding-top: 50px;
+  background-color: #33493d;
+  color: white;
+  box-shadow: 5px 0px 6px -4px rgba(51, 73, 61, 0.6);
+}
+
+#searchbar {
+  position: relative;
+}
+
+#searchbar input {
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  width: 80%;
+  padding: 5px 10px;
+  color: white;
+  font-weight: lighter;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+#searchBtn {
+  position: relative;
+  border-radius: 5px;
+  color: white;
+}
+
+#filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.filterCategory {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 15px;
+  border: 0.5px solid white;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.filterLabel.active {
+  border: 0.5px solid #33493d;
+  background-color: white;
+  color: #33493d;
+}
+
+.filterLabel label {
+  font-weight: lighter;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.filterLabel input {
+  display: none;
+}
+
+#filter h4 {
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+/*plants catalog*/
+
+#allPlants {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 4px;
+  padding-top: 50px;
+}
+
+#allPlants h1 {
+  width: 100%;
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.plant-mini {
+  position: relative;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+}
+/*Masonery grid*/
+
+#grid {
+  width: 100%;
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-sizer {
+  width: 33%;
+}
+.grid-item {
+  width: 33%;
+  float: left;
+}
+.gutter-sizer {
+  width: 4px;
+}
+
+.plant-mini-img {
+  height: 100%;
+}
+
+.plant-mini-img img {
+  width: 100%;
+}
+
+/*hover div*/
+
+.plantsInfo {
+  position: absolute;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(35, 48, 28, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.plantsInfo:hover {
+  color: rgba(35, 48, 28, 1);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color linear 0.5s;
+}
+
+.plantsInfo h4 {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.fav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  color: white;
+}
+
+.fas.fa-heart.white {
+  font-size: 25px;
+  color: white;
+}
+
+.fav.fas.fa-heart.white.is-active {
+  color: red;
+}
+
+/*One plant*/
+
+.onePlantImg {
+  width: 25%;
+}
+
+.onePlantImg img {
+  width: 100%;
+}
+
+.fas.fa-search {
+  color: white;
+  margin-left: 10px;
+}

@@ -1,0 +1,53 @@
+/* phones */
+/* from 413px */
+@media screen and (max-width: 767px) {
+  #asideprofile {
+    width: 40%;
+  }
+
+  .input-name {
+    font-size: 12px;
+  }
+  .type-in {
+    width: 60%;
+  }
+  .edit-btn {
+    margin-left: 0;
+  }
+  .avatarContainer {
+    width: 90px;
+    height: 90px;
+  }
+
+  #header2 {
+    font-size: 15px;
+  }
+
+  .user-profile-title {
+    font-size: 30px;
+  }
+
+  .delete {
+    padding: 5px;
+  }
+
+  .favgrid-item {
+    width: 100%;
+  }
+
+  .favgrid-item .fav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* big phones / small tablet */
+/* from 415px to 767px */
+/* @media screen and (min-width: 414px) and (max-width: 767px) {
+} */
+
+/* small to medium desktop */
+/* from 1024ox to 1440px */
+/* @media screen and (min-width: 1024px) and (max-width: 1440px) {
+} */

@@ -1,0 +1,60 @@
+/*LOGIN*/
+
+/* phones */
+/* from 413px */
+@media screen and (max-width: 767px) {
+  #login {
+    width: 80%;
+  }
+
+  #login .welcome {
+    font-size: 20px;
+  }
+
+  #login .input {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  #login .button {
+    margin-top: 30px;
+    width: 50%;
+    font-size: 15px;
+  }
+
+  #login #form p {
+    font-size: 10px;
+  }
+}
+
+/* tablets */
+/* from 768px to 1024px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #login {
+    width: 80%;
+  }
+
+  #login .welcome {
+    font-size: 50px;
+  }
+
+  #login .input {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  #login .button {
+    margin-top: 30px;
+    width: 40%;
+    font-size: 15px;
+  }
+
+  #login #form p {
+    font-size: 15px;
+  }
+}
+
+/* small to medium desktop */
+/* from 1024ox to 1440px */
+@media screen and (min-width: 1024px) {
+}
